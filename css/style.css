@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "iranyekan-light";
+    src: url(../Assets/Fonts/IRANYekanLight.ttf);
+}
+
+@font-face {
+    font-family: "iranyekan";
+    src: url(../Assets/Fonts/IRANYekanRegular.ttf);
+}
+
+@font-face {
+    font-family: "iranyekan-medium";
+    src: url(../Assets/Fonts/IRANYekanMedium.ttf);
+}
+
+@font-face {
+    font-family: "iranyekan-bold";
+    src: url(../Assets/Fonts/IRANYekanBold.ttf);
+}
+
+@font-face {
+    font-family: "iranyekan-extrabold";
+    src: url(../Assets/Fonts/IRANYekanExtraBold.ttf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F5F5F5;
+    scale: 1.0;
+    overflow: hidden;
+}
+
+* {
+    font-family: "iranyekan";
+}
+
+.div-responsive {
+    scale: 1.0;
+}
+
+/* =============================== */
+
+.div-input-w150 {
+    width: 150px;
+}
+.div-input-w250 {
+    width: 250px;
+}
+
+.div-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-input label {
+    font-family: "iranyekan";
+    font-size: 20px;
+}
+
+.div-input input {
+    border: 0px solid transparent;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.041);
+    outline: none;
+    padding-right: 20px;
+    font-family: "iranyekan-light";
+    font-size: 20px;
+}
+
+/* =============================== */
+
+button {
+    cursor: pointer;
+}
+
+.div-menu {
+    position: fixed;
+    width: 780px;
+    height: 80px;
+    border-radius: 50px;
+    bottom: 30px;
+    justify-self: center;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.089);
+}
+
+.div-menu-layout-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    direction: rtl;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.div-menu-button {
+    width: 180px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0px solid transparent;
+    background-color: #0077FF;
+    transition: all 200ms;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    font-family: "iranyekan-extrabold";
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.div-menu-button:hover {
+    background-color: #006de9;
+}
+
+.div-form-template {
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.div-page {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.div-form {
+    background-color: transparent;
+    height: 85%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* box profile */
+.div-box-profile {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 800px;
+    max-height: 800px;
+    border-radius: 300px;
+    overflow: hidden;
+    scale: 0.8;
+    align-self: center;
+}
+.div-box-profile img {
+    object-position: 400px 0px;
+    object-fit: none;
+}
+
+.div-column-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+}
+
+.lbl-welcome {
+    font-family: "iranyekan-light";
+    font-size: 15px;
+}
+.lbl-name {
+    margin-top: 10px;
+    font-family: "iranyekan-extrabold";
+    font-size: 34px;
+}
+.lbl-d1 {
+    margin-top: 10px;
+    font-family: "iranyekan-bold";
+    font-size: 28px;
+}
+.lbl-d2 {
+    font-family: "iranyekan";
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+.lbl-note {
+    margin-top: 50px;
+    width: 80%;
+    text-wrap: wrap;
+    font-family: "iranyekan-light";
+    font-size: 18px;
+}
+
+/* responsive */
+/* 
+@media only screen and (max-width: 1529px) {
+    .div-responsive {
+        scale: 0.9;
+    }
+    .div-page {
+        scale: 0.8;
+    }
+}
+@media only screen and (max-width: 1338px) {
+    .div-responsive {
+        scale: 0.9;
+    }
+    .div-page {
+        scale: 0.7;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .div-responsive {
+        scale: 0.9;
+    }
+    .div-page {
+        scale: 0.6;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .div-responsive {
+        scale: 0.9;
+    }
+    .div-page {
+        scale: 0.5;
+    }
+}
+@media only screen and (max-width: 1002px) {
+    .div-responsive {
+        scale: 0.9;
+    }
+    .div-page {
+        scale: 0.4;
+    }
+}
+@media only screen and (max-width: 886px) {
+    .div-responsive {
+        scale: 0.6;
+    }
+    .div-page {
+        scale: 0.3;
+    }
+} */
+
+/* ============================ */
+
+.div-layout-row {
+    display: flex;
+    direction: rtl;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.div-layout-column {
+    display: flex;
+    direction: rtl;
+    flex-direction: column;
+}
+
+.bg { background-color: cadetblue; }
+.bg1 { background-color: blueviolet; }
+
+.full-w { width: 100%; }
+.full-h { height: 100%; }
+
+.gap-2 { gap: 2px; }
+.gap-5 { gap: 5px; }
+.gap-7 { gap: 7px; }
+.gap-10 { gap: 10px; }
+.gap-12 { gap: 12px; }
+.gap-15 { gap: 15px; }
+.gap-17 { gap: 17px; }
+.gap-20 { gap: 20px; }
+.gap-30 { gap: 30px; }
+.gap-40 { gap: 40px; }
+
+.scale-u1 { scale: 1.1; }
+.scale-u2 { scale: 1.2; }
+.scale-u3 { scale: 1.3; }
+.scale-u4 { scale: 1.4; }
+.scale-u5 { scale: 1.5; }
+.scale-u6 { scale: 1.6; }
+.scale-u7 { scale: 1.7; }
+.scale-u8 { scale: 1.8; }
+.scale-u9 { scale: 1.9; }
+
+.scale-d1 { scale: 0.1; }
+.scale-d2 { scale: 0.2; }
+.scale-d3 { scale: 0.3; }
+.scale-d4 { scale: 0.4; }
+.scale-d5 { scale: 0.5; }
+.scale-d6 { scale: 0.6; }
+.scale-d7 { scale: 0.7; }
+.scale-d8 { scale: 0.8; }
+.scale-d9 { scale: 0.9; }
+
+/* .div-menu {
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    width: 110px;
+    background-color: aqua;
+}
+
+.div-page-template {
+    margin-right: 110px;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.div-page {
+    height: 100vh;
+    scroll-snap-align: start;
+} */
